@@ -1,37 +1,41 @@
 # Epigraphia Carnatica Knowledge Discovery
 
-You can use the [editor on GitHub](https://github.com/ShreyasKolpe/epigraphia-knowledge-discovery/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+This is a project to make the collection of inscriptions known as Epigraphia Carnatica rich with annotations and entities to make knowledge discovery possible through knowledge graphs.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+The project is in-progress and has the following sub-projects:
 
-### Markdown
+## Data Cleaning
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+The data being used is in the form of PDFs available at [Internet Archive](www.archive.org) which has been made possible through various digitization efforts.
 
-```markdown
-Syntax highlighted code block
 
-# Header 1
-## Header 2
-### Header 3
+In the absence of physical copies of the books, these PDFs provide the data. The copied text needs to be corrected both due to the errors caused by the OCR and to make the texts use a modern encoding scheme for Indian languages.
 
-- Bulleted
-- List
 
-1. Numbered
-2. List
+Checkout this project [here](https://github.com/ShreyasKolpe/epigraphia-data-cleaning)
 
-**Bold** and _Italic_ and `Code` text
+## REST APIs
 
-[Link](url) and ![Image](src)
-```
+The cleaned data of the inscriptions is to be made available through a database to programs and people.
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
 
-### Jekyll Themes
+This is achieved through a web app that exposes API endpoints for registering and fetching data, as well as a UI for seeing the data. In addition, a contributor's portal allows users to enter the data through forms.
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/ShreyasKolpe/epigraphia-knowledge-discovery/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
 
-### Support or Contact
+Checkout this project [here](https://github.com/ShreyasKolpe/epigraphia-rest-apis)
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+A version of the site is active at [http://epigraphiacarnatica.pythonanywhere.com/](http://epigraphiacarnatica.pythonanywhere.com/), populated with data as it comes in. This website will provide a persistent link to an inscription and its translation and transliteration in Roman characters.
+
+### Indic Character Input
+
+The forms in the above web app needed a virtual keyboard to enter non-standard Unicode cgaracters representing different sounds from Indic alphabets. This project achieves it in hacky way, though the aim is to make it a web component.
+
+
+Checkout this project [here](https://github.com/ShreyasKolpe/indic-character-input)
+
+## Contributing
+
+Contributors
+- Shreyas Kolpe, [find me here](https://www.shreyaskolpe.com)
+
+If you would wish to contribute, please email me!
