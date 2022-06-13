@@ -1,4 +1,4 @@
-## Welcome to GitHub Pages
+# Epigraphia Carnatica Knowledge Discovery
 
 You can use the [editor on GitHub](https://github.com/ShreyasKolpe/epigraphia-knowledge-discovery/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
